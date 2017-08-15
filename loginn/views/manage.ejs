@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<title></title>
+
+<body>
+
+    <h2>Manager</h2>
+    <h2>用户管理页面</h2>
+    <br>
+    <p><%=title%></p><br>
+    <p><%= title2 %></p>
+     <hr>
+    <form action="/manage/add" method="post" id="formAdd"> 
+    <h3>添加</h3>
+     用户名： <input type="text" name="usernameAdd" id="usernameAdd"/> 
+      密码： <input type="password" name="passwordAdd" id="passwordAdd"/><br>
+      <button name="UserAdd" type="submit">添加</button><br>
+    </form>
+    <br>
+<hr>
+
+     <form action="/manage/remove" method="post" id="formRemove">
+      <h3>删除</h3>  
+      删除的用户名： <input type="text" name="usernameRemove" id="usernameRemove"/><br>
+      <button name="UserRemove" type="submit">删除</button><br>
+    </form>
+    <br>
+<hr>
+     <form action="/manage/modify" method="post" id="formModify">  
+     <h3>修改</h3>
+     修改的用户名： <input type="text" name="usernameModify" id="usernameModify"/>
+     修改后的用户名<input type="text" name="usernameModifyF" id="usernameModifyF"/>
+     <br>
+     修改的密码： <input type="text" name="passwordModify" id="passwordModify"/>
+     修改后的密码： <input type="text" name="passwordModifyF" id="passwordModifyF"/><br>
+           <button name="UserModify" type="submit">修改</button><br>
+     </form>
+     <br>
+<hr>
+     <form action="/manage/query" method="post" id="formQuery"> 
+     <h3>查询</h3> 
+      查询的用户名 <input type="text" name="username" id="username"/> <br>
+      <button type="submit" name="UserQuery">查询</button><br>
+      </form>
+ <hr>         
+</body>
+</html>
